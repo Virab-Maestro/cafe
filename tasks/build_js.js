@@ -1,3 +1,5 @@
+// you cant see the sources in the final file as there is no "map.write"
+
 const {
 	src,
 	dest
