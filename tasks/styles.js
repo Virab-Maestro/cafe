@@ -4,9 +4,11 @@ const {
 	src,
 	dest
 } = require('gulp');
-const sass = require('gulp-sass');
+// const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const bulk = require('gulp-sass-bulk-importer');
-const prefixer = require('gulp-autoprefixer');
+const autoprefixer = require('gulp-autoprefixer');
+// import autoprefixer from 'gulp-autoprefixer';
 const clean = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const map = require('gulp-sourcemaps');
@@ -19,7 +21,7 @@ module.exports = function style(){
     .pipe(sass({
         outputStyle: 'compressed'
     }).on('error', sass.logError))
-    .pipe(prefixer({
+    .pipe(autoprefixer({
         overrideBrowserslist: ['last 8 versions'],
         browsers: [
             'Android >= 4',
