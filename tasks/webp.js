@@ -1,9 +1,9 @@
 const {
 	src
 } = require('gulp');
-const webpConv = require('gulp-webp');
+const webpConv = require('gulp-webp'); // 4.0.1
 const changed = require('gulp-changed');
-const multiDest = require('gulp-multi-dest');
+const multiDest = require('gulp-multi-dest'); //ok
 const plumber = require('gulp-plumber');
 
 module.exports = function webp() {

@@ -2,10 +2,10 @@ const {
 	src,
 	dest
 } = require('gulp');
-const changed = require('gulp-changed');
-const imagemin = require('gulp-imagemin');
-const recompress = require('imagemin-jpeg-recompress');
-const pngquant = require('imagemin-pngquant');
+const changed = require('gulp-changed'); // 4.0.3
+const imagemin = require('gulp-imagemin'); // 7.1.0
+const recompress = require('imagemin-jpeg-recompress'); //ok
+const pngquant = require('imagemin-pngquant'); //ok
 const bs = require('browser-sync');
 
 module.exports = function rastr() {
