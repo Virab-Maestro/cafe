@@ -1,8 +1,52 @@
-*{
-    padding: 0;
-    margin: 0;
+@use "./base/normalize";
+@use "./global";
+
+.header{
+    background: #292E36;
+    &__interface{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        padding: 50px 0;
+        border-bottom: 1px solid #5C6168;
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        padding: 20px 0;
+    }
+    &__nav-list{
+        display: flex;
+        gap: 60px;
+    }
+    &__nav-item{
+        letter-spacing: 0.2px;
+        transition: all .3s;
+        &:hover{
+            color: #E1B168;
+        }
+    }
+    &__nav-soc{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
-h1{
-    background-color: black;
+.btn{
+    display: block;
+    font-size: 22px;
+    width: 300px;
+    border: 1px solid #E1B168;
+    background-color: transparent;
+    padding: 20px 55px;
+    text-align: center;
+    transition: all .3s;
+
+    &:hover{
+        background-color: #E1B168;
+    }
 }
